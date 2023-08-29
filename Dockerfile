@@ -1,3 +1,8 @@
-FROM nginx
+FROM ubuntu
 
-COPY Web /usr/share/nginx/html
+COPY Web /var/
+
+RUN apt-get update
+RUN apt-get -y install nginx
+
+CMD [ "echo", "Docker" ]
