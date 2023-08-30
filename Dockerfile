@@ -1,8 +1,7 @@
-FROM ubuntu
+FROM python:3
 
-COPY Web /var/
+COPY Python/docker_demo.py ./usr/app/src/
 
-RUN apt-get update
-RUN apt-get -y install nginx
 
-CMD [ "echo", "Docker" ]
+
+CMD [ "python", "./usr/app/src/docker_demo.py"]
