@@ -6,6 +6,3 @@ A simple demonstration of containerizing a Python application using **Docker**. 
 
 - Docker
 
-## 📄 Project Structure
-
-# Docker-Demo
